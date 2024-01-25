@@ -16,8 +16,8 @@ export const Sidenav = () => {
                 <Icon src={Box} alt="Box" />
                 <Icon src={Discount} alt="Discount" />
                 <Icon src={Info} alt="Info" />
-                <div className="bg-white w-full rounded-3xl flex flex-col items-center pt-1">
-                    <Icon src={Bulb} alt="bulb" containerClass="bg-primary rounded-full w-5 h-5 flex justify-center items-center" className="w-3 h-3" />
+                <div className="bg-white w-full rounded-3xl flex flex-col items-center justify-center">
+                    <Icon src={Bulb} alt="bulb" containerClass="bg-primary rounded-full w-5 h-5 flex justify-center items-center mt-1" className="w-[14px] h-[14px]" />
                     <Icon src={Moon} alt="Moon" />
                 </div>
             </div>

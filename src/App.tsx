@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div className="bg-background text-secondary flex flex-row w-full">
        <Sidenav />
-       <div className="flex flex-col ">
+       <div className="flex flex-col w-full">
           <Topbar />
           <Dashboard />
        </div>
