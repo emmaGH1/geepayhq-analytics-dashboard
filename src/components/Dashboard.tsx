@@ -20,7 +20,9 @@ console.log(roundedSalesData);
         <div className="w-3/5 mr-4">
          <LastOrders />
         </div>
-        <TopPlatforms />
+        <div className="w-2/4">
+          <TopPlatforms />
+        </div>       
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import { BoxCart, BoxCoin, BoxRotate, BoxTick, DownTrend, DownTrendArrow, UpTrend, UpTrendArrow } from "../constants";
-import { Card } from "./Card";
+import { Card } from "@/components/ui/Card";
 
 const CardAnalytics = () => {
   return (

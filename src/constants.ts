@@ -23,7 +23,7 @@ import Avatar3 from './assets/Avatar 3.png'
 import Avatar4 from './assets/Avatar 4.png'
 import Avatar5 from './assets/Avatar 5.png'
 
-export { default as Avatar } from './assets/Avatar 1.png'
+export { default as Avatar } from './assets/Avatar.png'
 export { default as Avatar1 } from './assets/Avatar 1.png'
 export { default as Avatar2 } from './assets/Avatar 2.png'
 export { default as Avatar3 } from './assets/Avatar 3.png'
@@ -77,5 +77,36 @@ export const recentOrdersData = [
         amount: '78,000',
         status: 'Paid',
         imgUrl: Avatar5
+    },
+]
+
+export const topPlatformsData = [
+    {
+        name: 'Book Bazaar',
+        color: '#6160DC',
+        amount: '2,500,000',
+        progressLevel: 50,
+        percentage: 15
+    },
+    {
+        name: 'Artisan Aisle',
+        color: '#54C5EB',
+        amount: '1,800,000',
+        progressLevel: 40,
+        percentage: 10
+    },
+    {
+        name: 'Toy Troop',
+        color: '#FFB74A',
+        amount: '1,200,000',
+        progressLevel: 30,
+        percentage: 8
+    },
+    {
+        name: 'XStore',
+        color: '#FF4A55',
+        amount: '800,000',
+        progressLevel: 29, 
+        percentage: 7
     },
 ]

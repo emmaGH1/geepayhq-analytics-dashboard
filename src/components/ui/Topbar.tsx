@@ -1,4 +1,4 @@
-import { ArrowDown, Avatar, Calendar, Notification, Search } from "../constants";
+import { ArrowDown, Avatar, Calendar, Notification, Search } from "../../constants";
 
 export const Topbar = () => {
   return (

@@ -1,4 +1,4 @@
-import { Active, Box, Bulb, Category, Discount, Info, LogIn, LogOut, Logo, Moon, Profile, Settings, Trend } from "../constants"
+import { Active, Box, Bulb, Category, Discount, Info, LogIn, LogOut, Logo, Moon, Profile, Settings, Trend } from "../../constants"
 import { Icon } from './Icon';
 
 export const Sidenav = () => {

@@ -1,6 +1,6 @@
 import { Dashboard } from "./components/Dashboard";
-import { Sidenav } from "./components/Sidenav";
-import { Topbar } from "./components/Topbar";
+import { Sidenav } from "./components/ui/Sidenav";
+import { Topbar } from "./components/ui/Topbar";
 
 
 const App = () => {

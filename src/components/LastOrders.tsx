@@ -32,7 +32,7 @@ const LastOrders = () => {
             <TableBody>
                     {recentOrdersData.map((each) => {
                         return (
-                        <TableRow>
+                        <TableRow key={each.name}>
                             <TableCell className="flex items-center text-black text-md font-medium">
                                 <img src={each.imgUrl} className='w-7 h-7 mr-2'/>
                                 <div>{each.name}</div>
