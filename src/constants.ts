@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 export { default as Logo } from './assets/logo.svg'
 export { default as Category } from './assets/category.svg'
 export { default as Box } from './assets/box.svg'
@@ -16,6 +17,12 @@ export { default as Calendar } from './assets/solar_calendar-linear.svg'
 export { default as Notification } from './assets/solar_bell-outline.svg'
 export { default as ArrowDown } from './assets/Arrow - Down 2.svg'
 
+import Avatar1 from './assets/Avatar 1.png'
+import Avatar2 from './assets/Avatar 2.png'
+import Avatar3 from './assets/Avatar 3.png'
+import Avatar4 from './assets/Avatar 4.png'
+import Avatar5 from './assets/Avatar 5.png'
+
 export { default as Avatar } from './assets/Avatar 1.png'
 export { default as Avatar1 } from './assets/Avatar 1.png'
 export { default as Avatar2 } from './assets/Avatar 2.png'
@@ -31,3 +38,44 @@ export { default as UpTrendArrow } from './assets/trending-up-arrow.svg'
 export { default as DownTrendArrow } from './assets/trending-down-arrow.svg'
 export { default as UpTrend } from './assets/up-trend-signal.svg'
 export { default as DownTrend } from './assets/down-trend-signal.svg'
+
+export { default as Invoice } from './assets/invoice.svg'
+
+export const salesData = [7, 22, 3, 23, 9, 46, 9, 25, 33, 4, 30, 27, 50];
+export const recentOrdersData = [
+    {
+        name: 'Marcus Bergson',
+        date: 'Nov 15, 2023',
+        amount: '80,000',
+        status: 'Paid',
+        imgUrl: Avatar1
+    },
+    {
+        name: 'Jaydon Vaccaro',
+        date: 'Nov 15, 2023',
+        amount: '150,000',
+        status: 'Refund',
+        imgUrl: Avatar2
+    },
+    {
+        name: 'Corey Schleifer',
+        date: 'Nov 14, 2023',
+        amount: '87,000',
+        status: 'Paid',
+        imgUrl: Avatar3
+    },
+    {
+        name: 'Cooper Press',
+        date: 'Nov 14, 2023',
+        amount: '100,000',
+        status: 'Refund',
+        imgUrl: Avatar4
+    },
+    {
+        name: 'Philip Lubin',
+        date: 'Nov 13, 2023',
+        amount: '78,000',
+        status: 'Paid',
+        imgUrl: Avatar5
+    },
+]

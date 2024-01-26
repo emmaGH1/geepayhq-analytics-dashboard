@@ -11,7 +11,7 @@ interface Props {
 
 export const Card = ({ BoxIcon, TrendIcon, Name, Amount, TrendArrowIcon, Percentage, isTrendUp = true }: Props) => {
   return (
-    <div className="bg-white rounded-lg">
+    <div className="bg-white rounded-xl">
        <div className="flex flex-col p-2 h-full justify-between">
             <div className="flex justify-between items-center">
                 <img src={BoxIcon} alt="box-icon" className="border border-[#E1DFDF] rounded-full w-7 h-7 p-1"/>
@@ -28,7 +28,7 @@ export const Card = ({ BoxIcon, TrendIcon, Name, Amount, TrendArrowIcon, Percent
                     <span>{Percentage}%</span> 
                 </div>
                 </div>
-                <div className="text-md">
+                <div className="text-md text-[#606060] ">
                     vs. previous month
                 </div>
             </div>
