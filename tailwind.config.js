@@ -21,6 +21,8 @@ export default {
         'warning': '#F4C700',
         'white': '#FFFFFF',
         'background': '#F7F8FA',
+        'positive': 'rgba(52, 202, 165, 0.12)',
+        'negative': 'rgba(237, 84, 78, 0.12)',
         'grayscale': {
           50: '#FAFAFA',
           100: '#F5F5F5',
