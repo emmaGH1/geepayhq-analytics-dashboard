@@ -1,4 +1,20 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+import Logo from './assets/logo.svg'
+import Category from './assets/category.svg'
+import Box from './assets/box.svg'
+import Profile from './assets/profile-2user.svg'
+import Trend from './assets/trend-up.svg'
+import Discount from './assets/discount-shape.svg'
+import Info from './assets/info-circle.svg'
+import Bulb from './assets/brightness-1.svg'
+import Moon from './assets/moon 1.svg'
+import LogIn from './assets/arrow-right.svg'
+import Settings from './assets/setting-2.svg'
+import LogOut from './assets/logout.svg'
+import Active from './assets/Active.svg'
+import Search from './assets/Icon - Search.svg'
+import Calendar from './assets/solar_calendar-linear.svg'
+
 export { default as Logo } from './assets/logo.svg'
 export { default as Category } from './assets/category.svg'
 export { default as Box } from './assets/box.svg'
@@ -14,6 +30,7 @@ export { default as LogOut } from './assets/logout.svg'
 export { default as Active } from './assets/Active.svg'
 export { default as Search } from './assets/Icon - Search.svg'
 export { default as Calendar } from './assets/solar_calendar-linear.svg'
+
 export { default as Notification } from './assets/solar_bell-outline.svg'
 export { default as ArrowDown } from './assets/Arrow - Down 2.svg'
 
@@ -108,5 +125,40 @@ export const topPlatformsData = [
         amount: '800,000',
         progressLevel: 29, 
         percentage: 7
+    },
+]
+
+export const MobileNavLinks = [
+    {
+        label: 'Category',
+        imgUrl: Category,  
+    },
+    {
+        label: 'Trending',
+        imgUrl: Trend,  
+    },
+    {
+        label: 'Analytics',
+        imgUrl: Box,  
+    },
+    {
+        label: 'Discount',
+        imgUrl: Discount,  
+    },
+    {
+        label: 'Info',
+        imgUrl: Info,  
+    },
+    {
+        label: 'Login',
+        imgUrl: LogIn,  
+    },
+    {
+        label: 'Settings',
+        imgUrl: Settings
+    },
+    {
+        label: 'Logout',
+        imgUrl: LogOut,  
     },
 ]

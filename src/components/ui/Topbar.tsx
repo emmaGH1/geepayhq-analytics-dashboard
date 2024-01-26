@@ -2,7 +2,7 @@ import { ArrowDown, Avatar, Calendar, Notification, Search } from "../../constan
 
 export const Topbar = () => {
   return (
-    <div className="flex flex-row mx-auto justify-between w-full px-5 items-center h-16 border-b border-[#E5EAEF] ">
+    <div className="flex flex-row mx-auto justify-between w-full px-5 items-center h-16 border-b border-[#E5EAEF] max-lg:hidden">
       <div>
           <h5>
             Dashboard
@@ -23,7 +23,7 @@ export const Topbar = () => {
         </div>
         <img src={Notification} alt="Notification" className="rounded-full border border-[#E5EAEF] p-1 w-6 h-6 mr-3" />
         <div className="flex items-center border-[#E5EAEF] border rounded-3xl px-1">
-          <div className="w-6 h-6">
+          <div className="w-6 h-6 mr-1">
             <img src={Avatar} alt="Avatar" />
           </div>
           <div className="flex flex-col text-sm">

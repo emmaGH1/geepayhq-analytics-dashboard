@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/Card";
 
 const CardAnalytics = () => {
   return (
-    <div className="grid lg:grid-cols-2 w-2/4 gap-4">
+    <div className="grid md:grid-cols-2 w-2/4 gap-4 max-lg:w-full max-lg:mt-5">
         <Card 
           BoxIcon={BoxTick} 
           Name='Total Order'

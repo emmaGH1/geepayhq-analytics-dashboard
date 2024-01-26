@@ -3,7 +3,7 @@ import { Icon } from './Icon';
 
 export const Sidenav = () => {
   return (
-    <div className="bg-white border-b border-r border-[#EBECF2]">
+    <div className="bg-white border-b border-r border-[#EBECF2] max-lg:hidden">
         <div className="flex flex-col h-[90vh] w-[80px] items-center justify-between bg-background">
             <div className="flex flex-col justify-center items-center">
                 <Icon src={Logo} alt="Logo" className="mt-4 w-8 h-8 mb-2 max-lg:mb-5" />
