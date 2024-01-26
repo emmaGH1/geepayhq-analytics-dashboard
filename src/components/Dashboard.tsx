@@ -1,3 +1,4 @@
+import CardAnalytics from "./CardAnalytics";
 import SalesTrend from "./SalesTrend";
 
 export const Dashboard = () => {
@@ -7,10 +8,13 @@ const roundedSalesData = salesData.map((value) => parseFloat(value.toFixed(3)));
 
 console.log(roundedSalesData);
   return (
-    <div className="flex flex-col w-full mx-auto">
-       <div className="w-2/4">
-         <SalesTrend />
-       </div>
+    <div className="flex flex-col w-[95%] mx-auto mt-5">
+      <div className="flex justify-between">
+        <div className="w-2/4 mr-4">
+          <SalesTrend />
+        </div>
+        <CardAnalytics />
+      </div>
     </div>
   );
 };
