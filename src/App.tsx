@@ -10,14 +10,14 @@ const App = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className="bg-background text-secondary flex flex-row w-full relative">
+    <div className="bg-background dark:bg-background-dark text-secondary dark:text-dark-text flex flex-row w-full relative">
        <Sidenav />
        <div className="flex flex-col w-full relative">
           <Topbar/>
           <MobileNav setIsOpen={setIsOpen} />
           {isOpen && !!isOpen && <MobileNavContent setIsOpen={setIsOpen} />}
           <Dashboard />
-          <Toaster className="text-black"/>
+          <Toaster className="text-black dark:text-dark-text"/>
        </div>
     </div>
   );
