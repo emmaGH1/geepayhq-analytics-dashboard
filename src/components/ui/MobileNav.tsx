@@ -62,13 +62,13 @@ const MobileNav = ({ setIsOpen }: Props) => {
            <div className="mr-5">
              {isThemeDark ? (
               <div>
-                <Moon className={`${isThemeDark ? 'block dark:text-dark-text text-black' : 'text-gray-500 hidden'}`} onClick={() => handleTheme('light')} />
+                <Sun className={`${isThemeDark ? 'block dark:text-dark-text text-black' : 'text-gray-500 hidden'}`} onClick={() => handleTheme('light')} />
               </div>
              )
              : 
              (
               <div>
-                <Sun className={`${!isThemeDark ? 'block dark:text-dark-text text-black' : 'text-gray-500 hidden'}`} onClick={() => handleTheme('dark')} />
+                <Moon className={`${!isThemeDark ? 'block dark:text-dark-text text-black' : 'text-gray-500 hidden'}`} onClick={() => handleTheme('dark')} />
               </div>
              )
             }
