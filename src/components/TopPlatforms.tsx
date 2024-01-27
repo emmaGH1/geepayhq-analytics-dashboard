@@ -1,7 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Progress } from "@/components/ui/progress"
 import { topPlatformsData } from "@/constants";
 
 const TopPlatforms = () => {
+ 
   return (
     <div className="bg-white rounded-xl px-3 w-full pb-3">
        <div className="flex justify-between items-center text-lg">
