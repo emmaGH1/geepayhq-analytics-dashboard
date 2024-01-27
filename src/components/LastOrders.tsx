@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import {
     Table,
     TableBody,
@@ -8,7 +7,7 @@ import {
     TableRow,
   } from "@/components/ui/table"
 
-import { Invoice, recentOrdersData } from "@/constants"
+import { recentOrdersData } from "@/constants"
 import { FileDown } from "lucide-react";
 
 
@@ -32,7 +31,7 @@ const LastOrders = () => {
             <TableBody>
                     {recentOrdersData.map((each) => {
                         return (
-                        <div>
+                        <div key={each.name}>
                             <TableRow key={each.name} className=" whitespace-nowrap">
                                 <TableCell className="flex items-center text-black dark:text-dark-text text-md font-medium max-lg:mr-5">
                                     <img src={each.imgUrl} className='w-7 h-7 mr-2'/>

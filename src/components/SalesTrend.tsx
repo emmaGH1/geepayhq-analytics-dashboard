@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -10,13 +9,11 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import type { ChartData, ChartOptions } from 'chart.js';
-import { ChevronDown } from 'lucide-react';
 import {
   Select,
   SelectContent,
   SelectGroup,
   SelectItem,
-  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
