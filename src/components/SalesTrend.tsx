@@ -10,7 +10,16 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import type { ChartData, ChartOptions } from 'chart.js';
-import { ArrowDown } from '../constants';
+import { ChevronDown } from 'lucide-react';
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
   
 export default function SalesTrend() {
     ChartJS.register(
@@ -82,15 +91,27 @@ const salesData = [7, 22, 3, 23, 9, 46, 9, 25, 33, 4, 30, 27, 50];
       };
   
   return (
-    <div className='flex flex-col bg-white p-2 rounded-xl'>
+    <div className='flex flex-col bg-white dark:bg-primary-dark p-2 rounded-xl'>
 
       <div className='flex flex-row justify-between items-center mb-5'>
         <h5 className=' text-lg'>Sales Trend</h5>
-        <div className='flex'>
+        <div className='flex items-center'>
           <span className='mr-2'>Sort by:</span>
-          <div className='flex border border-[##E1DFDF] rounded-full text-md px-2 items-center'>
-            <span>Weekly</span>
-            <img src={ArrowDown} className=' ml-1 w-4 h-4'/>
+          <div className='flex border border-[##E1DFDF] rounded-full text-md px-2 items-center dark:text-dark-text'>
+          <Select>
+            <SelectTrigger className="w-[180px] border-none bg-transparent dark:text-dark-text">
+              <SelectValue placeholder="Weekly"/>
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup className='dark:text-dark-text'>
+                <SelectItem value="apple">Daily</SelectItem>
+                <SelectItem value="banana">Weekly</SelectItem>
+                <SelectItem value="blueberry">Monthly</SelectItem>
+                <SelectItem value="grapes">Yearly</SelectItem>
+              </SelectGroup>
+            </SelectContent>
+          </Select>
+            {/* <ChevronDown className="w-4 h-4 mx-1" /> */}
           </div>
         </div>
       </div>

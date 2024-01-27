@@ -5,7 +5,7 @@ import { topPlatformsData } from "@/constants";
 const TopPlatforms = () => {
  
   return (
-    <div className="bg-white rounded-xl px-3 w-full pb-3">
+    <div className="bg-white dark:bg-primary-dark rounded-xl px-3 w-full pb-3">
        <div className="flex justify-between items-center text-lg">
             <div className=" font-bold mt-3">Top Platforms</div>
             <div className="text-primary hover:text-primary/60 transition-colors duration-300 delay-150 cursor-pointer mt-3">See All
@@ -18,9 +18,9 @@ const TopPlatforms = () => {
                       <div className="font-bold text-lg mb-3">{each.name}</div>
                       <Progress value={each.progressLevel} className="bg-[#F5F5F5]" bgColor={each.color} />
                       <div className="flex justify-between mt-2">
-                        <div className="text-[#525252] ">${each.amount}
+                        <div className="text-[#525252] dark:text-dark-text">${each.amount}
                         </div>
-                        <div className="text-[#525252]">+{each.percentage}%</div>
+                        <div className="text-[#525252] dark:text-[#CCCCCC]">+{each.percentage}%</div>
                       </div>
                     </div>
                 )
