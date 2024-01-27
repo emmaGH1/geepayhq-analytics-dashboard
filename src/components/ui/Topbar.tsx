@@ -46,11 +46,11 @@ export const Topbar = () => {
           className="rounded-full border border-[border-color] p-1 w-6 h-6 mr-3" 
           onClick={() => toast('You have 0 unread messages')}
         />
-        <div className="flex items-center border-[border-color] border rounded-3xl px-1">
+        <div className="flex items-center border-[border-color] border rounded-3xl px-1 cursor-pointer" onClick={() => setToggleProfile(prev => !prev)}>
           <div className="w-6 h-6 mr-1">
             <img src={Avatar} alt="Avatar" />
           </div>
-          <div className="flex flex-col text-sm cursor-pointer" onClick={() => setToggleProfile(prev => !prev)}>
+          <div className="flex flex-col text-sm" >
             <span className="font-bold hover:opacity-80">Justin Berguson</span>
             <span className="text-xs text-[#787486] dark:text-[#CCCCCC] mb-1">Justin@gmail.com</span>            
           </div>

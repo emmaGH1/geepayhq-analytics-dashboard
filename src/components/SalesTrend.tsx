@@ -36,6 +36,13 @@ const salesData = [7, 22, 3, 23, 9, 46, 9, 25, 33, 4, 30, 27, 50];
  const options: ChartOptions<'bar'> = {
       responsive: true,
       plugins: {
+        tooltip: {
+          displayColors: false,
+          callbacks: {
+          label: (tooltipItem) => `$${tooltipItem.formattedValue}.000`,
+          title: () => ''
+      },
+        },
         legend: {
           display: false,
         },

@@ -9,6 +9,7 @@ import {
   } from "@/components/ui/table"
 
 import { Invoice, recentOrdersData } from "@/constants"
+import { FileDown } from "lucide-react";
 
 
 const LastOrders = () => {
@@ -31,21 +32,23 @@ const LastOrders = () => {
             <TableBody>
                     {recentOrdersData.map((each) => {
                         return (
-                        <TableRow key={each.name} className=" whitespace-nowrap">
-                            <TableCell className="flex items-center text-black dark:text-dark-text text-md font-medium max-lg:mr-5">
-                                <img src={each.imgUrl} className='w-7 h-7 mr-2'/>
-                                <div>{each.name}</div>
-                            </TableCell>
-                            <TableCell className="text-[#737373] dark:text-[#CCCCCC]">{each.date}</TableCell>
-                            <TableCell className="font-bold">${each.amount}</TableCell>
-                            <TableCell 
-                            className={`${each.status === 'Paid' ? 'text-[#34CAA5]' : 'text-[#ED544E]'}`}
-                            >{each.status}</TableCell>
-                            <TableCell className="flex">
-                                <img src={Invoice} alt="invoice" />
-                                <div className="ml-1 font-semibold">View</div>
-                            </TableCell>
-                        </TableRow>
+                        <div>
+                            <TableRow key={each.name} className=" whitespace-nowrap">
+                                <TableCell className="flex items-center text-black dark:text-dark-text text-md font-medium max-lg:mr-5">
+                                    <img src={each.imgUrl} className='w-7 h-7 mr-2'/>
+                                    <div>{each.name}</div>
+                                </TableCell>
+                                <TableCell className="text-[#737373] dark:text-[#CCCCCC]">{each.date}</TableCell>
+                                <TableCell className="font-bold">${each.amount}</TableCell>
+                                <TableCell 
+                                className={`${each.status === 'Paid' ? 'text-[#34CAA5]' : 'text-[#ED544E]'}`}
+                                >{each.status}</TableCell>
+                                <TableCell className="flex">
+                                    <FileDown className="w-6 h-5"/>
+                                    <div className="ml-1 font-semibold">View</div>
+                                </TableCell>
+                            </TableRow>
+                        </div>
                         )
                     })}
             </TableBody>
