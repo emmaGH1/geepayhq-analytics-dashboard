@@ -30,7 +30,7 @@ const LastOrders = () => {
                 </TableRow>
             </TableHeader>
             <TableBody>
-                    {recentOrdersData.map((each) => {
+                    {recentOrdersData.map((each, index: number) => {
                         return (
                         <TableRow key={each.name} className=" whitespace-nowrap">
                             <TableCell className="flex items-center text-black dark:text-dark-text text-md font-medium max-lg:mr-5">

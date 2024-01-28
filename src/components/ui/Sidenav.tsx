@@ -31,19 +31,19 @@ export const Sidenav = () => {
   }
   return (
     <div className="bg-white border-b border-r border-[#EBECF2] max-lg:hidden dark:bg-primary-dark dark:border-none">
-        <div className="flex flex-col h-screen w-[80px] items-center justify-between bg-background dark:bg-primary-dark">
-            <div className="flex flex-col justify-center items-center">
-                <Icon src={Logo} alt="Logo" className="mt-4 w-8 h-8 mb-2 max-lg:mb-5" />
+        <div className="fixed flex flex-col items-center justify-between h-screen bg-background dark:bg-primary-dark w-[80px]">
+            <div className="flex flex-col items-center justify-center">
+                <Icon src={Logo} alt="Logo" className="w-8 h-8 mt-4 mb-2 max-lg:mb-5" />
                 <div className="relative">
                     <Icon src={Category} alt="Category" />
-                    <Icon src={Active} alt="Active" className="absolute left-10 top-0" />
+                    <Icon src={Active} alt="Active" className="absolute top-0 left-10" />
                 </div>
                 <Icon src={Trend} alt="Trend" />
                 <Icon src={Profile} alt="Profile" />
                 <Icon src={Box} alt="Box" />
                 <Icon src={Discount} alt="Discount" />
                 <Icon src={Info} alt="Info" />
-                <div className="bg-white dark:bg-background-dark w-full rounded-3xl flex flex-col items-center justify-center py-2 cursor-pointer">
+                <div className="flex flex-col items-center justify-center w-full py-2 bg-white cursor-pointer dark:bg-background-dark rounded-3xl">
                     <div className={`${!isThemeDark ? 'bg-primary' : ' bg-white dark:bg-primary-dark'} p-2 mx-1 mb-1 rounded-full`} onClick={() => handleTheme('light')}>
                       <Sun className={`${!isThemeDark ? 'text-white' : 'text-gray-500'}`} />
                     </div>
