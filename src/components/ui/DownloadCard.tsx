@@ -20,16 +20,17 @@ const DownloadCard = ({ each }: Props) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen absolute">
-      <div className="bg-white dark:bg-background-dark p-4 rounded-md shadow-md">
-        <div className="text-lg font-bold mb-2">Name: {each.name}</div>
+    <div className="absolute flex flex-col items-center justify-center h-screen">
+      <div className="p-4 bg-white rounded-md shadow-md dark:bg-background-dark">
+        <img src={each.imgUrl} alt="avatar" />
+        <div className="mb-2 text-lg font-bold">Name: {each.name}</div>
         <div>Date: {each.date}</div>
         <div>Status: {each.status}</div>
         <div>Amount: {each.amount}</div>
       </div>
       <button
         onClick={handleDownload}
-        className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md cursor-pointer hover:bg-blue-600"
+        className="px-4 py-2 mt-4 text-white bg-blue-500 rounded-md cursor-pointer hover:bg-blue-600"
       >
         Download
       </button>
