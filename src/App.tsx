@@ -18,7 +18,7 @@ const App = () => {
           <Topbar/>
           <MobileNav setIsOpen={setIsOpen} />
           {isOpen && !!isOpen && <MobileNavContent setIsOpen={setIsOpen} />}
-          <Dashboard />
+          <Dashboard /> 
           <Toaster className="text-black dark:text-dark-text"/>
        </div>
     </div>
