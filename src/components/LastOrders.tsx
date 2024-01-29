@@ -14,10 +14,10 @@ import { FileDown } from "lucide-react";
 
 const LastOrders = () => {
   return (
-    <div className="bg-white dark:bg-primary-dark rounded-xl px-3">
-        <div className="flex justify-between items-center text-lg">
-            <div className=" font-bold mt-3 ml-1">Last Orders</div>
-            <div className="text-primary hover:text-primary/60 transition-colors duration-300 delay-150 cursor-pointer mt-3">See All</div>
+    <div className="px-3 bg-white dark:bg-primary-dark rounded-xl">
+        <div className="flex items-center justify-between text-lg">
+            <div className="mt-3 ml-1 font-bold ">Last Orders</div>
+            <div className="mt-3 transition-colors duration-300 delay-150 cursor-pointer text-primary hover:text-primary/60">See All</div>
         </div>
         <Table>
             <TableHeader>
@@ -30,11 +30,11 @@ const LastOrders = () => {
                 </TableRow>
             </TableHeader>
             <TableBody>
-                    {recentOrdersData.map((each, index: number) => {
+                    {recentOrdersData.map((each) => {
                         return (
                         <TableRow key={each.name} className=" whitespace-nowrap">
-                            <TableCell className="flex items-center text-black dark:text-dark-text text-md font-medium max-lg:mr-5">
-                                <img src={each.imgUrl} className='w-7 h-7 mr-2'/>
+                            <TableCell className="flex items-center font-medium text-black dark:text-dark-text text-md max-lg:mr-5">
+                                <img src={each.imgUrl} className='mr-2 w-7 h-7'/>
                                 <div>{each.name}</div>
                             </TableCell>
                             <TableCell className="text-[#737373] dark:text-[#CCCCCC]">{each.date}</TableCell>
@@ -42,7 +42,7 @@ const LastOrders = () => {
                             <TableCell 
                             className={`${each.status === 'Paid' ? 'text-[#34CAA5]' : 'text-[#ED544E]'}`}
                             >{each.status}</TableCell>
-                            <TableCell className="flex">
+                            <TableCell className="flex cursor-pointer">
                                 <FileDown className="w-6 h-5"/>
                                 <div className="ml-1 font-semibold">View</div>
                             </TableCell>

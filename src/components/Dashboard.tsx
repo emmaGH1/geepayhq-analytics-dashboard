@@ -12,7 +12,7 @@ export const Dashboard = () => {
         </div>
         <CardAnalytics />
       </div>
-      <div className="flex max-lg:flex-col mt-7 mb-10">
+      <div className="flex mb-10 max-lg:flex-col mt-7">
         <div className="w-3/5 mr-4 max-lg:w-full">
          <LastOrders />
         </div>
