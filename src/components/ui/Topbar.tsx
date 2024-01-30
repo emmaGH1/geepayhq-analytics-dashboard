@@ -15,7 +15,7 @@ export const Topbar = () => {
     setShowCalendar(prev => !prev)
   }
   return (
-    <div className="flex flex-row mx-auto justify-between w-full px-5 items-center h-16 border-b border-[border-color] max-lg:hidden dark:bg-primary-dark dark:border-none relative">
+    <div className="flex flex-row mx-auto justify-between w-full px-5 items-center h-16 border-b border-border-color max-lg:hidden dark:bg-primary-dark dark:border-none relative">
       <div>
           <h5>
             Dashboard
