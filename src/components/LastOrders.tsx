@@ -53,7 +53,7 @@ const LastOrders = () => {
                             <TableCell 
                             className={`${each.status === 'Paid' ? 'text-[#34CAA5]' : 'text-[#ED544E]'}`}
                             >{each.status}</TableCell>
-                            <TableCell className="flex cursor-pointer" onClick={() => handleClick(each)}>
+                            <TableCell className="flex cursor-pointer hover:text-primary delay-100 transition-colors duration-150" onClick={() => handleClick(each)}>
                                 <FileDown className="w-6 h-5"/>
                                 <div className="ml-1 font-semibold">View</div>
                             </TableCell>
