@@ -16,6 +16,21 @@ const DownloadCard = ({ rowData, toggleDisplay, setToggleDisplay }: Props) => {
 
   const { name, date, amount, status } = rowData
 
+  const handleDownload = () => {
+    const invoiceContent = `
+      Invoice for: ${name}
+      Date Created: ${date}
+      Amount: ${amount}
+      Status: ${status}
+    `;
+
+    const blob = new Blob([invoiceContent], { type: 'text/plain' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = `${name}_invoice.txt`;
+    link.click();
+  };
+
 
   return (
     <div className={`fixed top-0 left-0 w-full h-full ${toggleDisplay ? 'flex' : 'hidden'} items-center justify-center z-50`}>
@@ -25,6 +40,7 @@ const DownloadCard = ({ rowData, toggleDisplay, setToggleDisplay }: Props) => {
           <h2 className="text-xl font-semibold text-dark-text">{name}</h2>
           <div className="flex items-center">
             <button
+              onClick={handleDownload}
               className="text-gray-500 hover:text-gray-700 transition-colors delay-150 cursor-pointer mr-4"        
             >
               <Download className="w-6 h-6" />
