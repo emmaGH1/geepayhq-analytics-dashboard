@@ -9,10 +9,21 @@ import {
   } from "@/components/ui/table"
 
 import { recentOrdersData } from "@/constants"
+import { LastOrdersReceipts } from "@/lib/type-definitions";
 import { FileDown } from "lucide-react";
+import { useState } from "react";
+import DownloadCard from "./DownloadCard";
 
 
 const LastOrders = () => {
+  const [cardData, setCardData] = useState<LastOrdersReceipts | null>(null)
+  const [toggleDisplay, setToggleDisplay] = useState(false)
+
+  const handleClick = (rowData: LastOrdersReceipts ) => {
+    setCardData(rowData)
+    setToggleDisplay(true)
+  }
+
   return (
     <div className="px-3 bg-white dark:bg-primary-dark rounded-xl">
         <div className="flex items-center justify-between text-lg">
@@ -42,7 +53,7 @@ const LastOrders = () => {
                             <TableCell 
                             className={`${each.status === 'Paid' ? 'text-[#34CAA5]' : 'text-[#ED544E]'}`}
                             >{each.status}</TableCell>
-                            <TableCell className="flex cursor-pointer">
+                            <TableCell className="flex cursor-pointer" onClick={() => handleClick(each)}>
                                 <FileDown className="w-6 h-5"/>
                                 <div className="ml-1 font-semibold">View</div>
                             </TableCell>
@@ -51,6 +62,7 @@ const LastOrders = () => {
                     })}
             </TableBody>
         </Table>
+        <DownloadCard rowData={cardData} toggleDisplay={toggleDisplay} setToggleDisplay={setToggleDisplay} />
     </div>
   );
 };
