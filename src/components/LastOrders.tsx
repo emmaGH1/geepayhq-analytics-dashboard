@@ -10,10 +10,9 @@ import {
 
 import { recentOrdersData } from "@/constants"
 import { LastOrdersReceipts } from "@/lib/type-definitions";
-import { FileDown } from "lucide-react";
 import { useState } from "react";
 import DownloadCard from "./DownloadCard";
-
+import { FileDown } from 'lucide-react'
 
 const LastOrders = () => {
   const [cardData, setCardData] = useState<LastOrdersReceipts | null>(null)
